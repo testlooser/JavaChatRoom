@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Java](https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=java)
+![Java](https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=java)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?style=for-the-badge&logo=mysql)
 ![Socket](https://img.shields.io/badge/Socket-TCP-green?style=for-the-badge)
 ![Swing](https://img.shields.io/badge/GUI-Swing-purple?style=for-the-badge)
@@ -58,7 +58,6 @@
 
 - ✅ **窗口抖动** - QQ 式抖一抖效果
 - ✅ **消息提示音** - 新消息到达提示
-- ✅ **系统托盘** - 最小化到托盘，图标闪烁提醒
 - ✅ **离线消息** - 用户离线时消息暂存，上线后推送
 - ✅ **未读计数** - 各聊天窗口未读消息计数显示
 - ✅ **服务端 GUI** - 可视化监控面板，支持系统广播
@@ -122,14 +121,12 @@ mysql -u root -p qq_db < qq_db.sql
 
 ```bash
 # 运行 server.ServerMain
-java -cp "out/production/JAVA_INTERNET_ChatRoom;lib/*" server.ServerMain
 ```
 
 **启动客户端：**
 
 ```bash
 # 运行 client.ClientMain（可启动多个实例）
-java -cp "out/production/JAVA_INTERNET_ChatRoom;lib/*" client.ClientMain
 ```
 
 ---
@@ -337,17 +334,7 @@ CREATE TABLE users (
 2. 使用内网穿透工具（如 frp、ngrok）
 3. 将服务端部署到云服务器
 
----
 
-## 🤝 贡献指南
-
-欢迎提交 Issue 和 Pull Request！
-
-1. Fork 本仓库
-2. 创建新分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 提交 Pull Request
 
 ---
 
@@ -359,6 +346,5 @@ CREATE TABLE users (
 
 **如果这个项目对你有帮助，请给个 ⭐ Star 支持一下！**
 
-Made with ❤️ by ChatRoom Team
 
 </div>
