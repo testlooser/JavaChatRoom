@@ -10,8 +10,6 @@
 
 **一个基于 Java Socket 的局域网即时通讯系统，采用 C/S 架构设计**
 
-[功能特性](#-功能特性) • [快速开始](#-快速开始) • [项目结构](#-项目结构) • [技术亮点](#-技术亮点) • [使用说明](#-使用说明)
-
 </div>
 
 ---
@@ -300,7 +298,6 @@ historyManager.saveMessages(key, messages);
 ## 📋 数据库设计
 
 ### users 表结构
-
 ```sql
 CREATE TABLE users (
     uid VARCHAR(8) PRIMARY KEY COMMENT '8位用户ID',
@@ -310,33 +307,6 @@ CREATE TABLE users (
 );
 ```
 
----
-
-## ❓ 常见问题
-
-### Q: 服务端启动报错 "ComboPooledDataSource cannot be resolved"？
-
-**A:** 需要将 `lib/` 目录下的 JAR 包添加到项目依赖中。详见[安装步骤](#3%EF%B8%8F⃣-导入依赖)。
-
-### Q: 客户端无法连接服务器？
-
-**A:**
-
-1. 确保服务端已启动
-2. 检查防火墙是否放行 8888 端口
-3. 如果是跨机器访问，需要修改 `ClientMain.java` 中的 `ip` 变量为服务器实际 IP
-
-### Q: 如何支持广域网访问？
-
-**A:** 本项目为局域网设计，如需广域网访问：
-
-1. 在路由器上配置端口映射（8888 端口）
-2. 使用内网穿透工具（如 frp、ngrok）
-3. 将服务端部署到云服务器
-
-
-
----
 
 ## 📄 开源协议
 
@@ -345,6 +315,5 @@ CREATE TABLE users (
 <div align="center">
 
 **如果这个项目对你有帮助，请给个 ⭐ Star 支持一下！**
-
 
 </div>
